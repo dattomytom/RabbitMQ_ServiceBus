@@ -5,9 +5,11 @@ VisualStudioVersion = 17.8.34601.278
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ASPNETCoreRabittMQ", "ASPNETCoreRabittMQ", "{66D34D95-D7E0-4805-8683-1AA63E9968B3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Producer", "ASPNETCoreRabittMQ\Producer\Producer.csproj", "{ED3ED8C2-1E33-4343-A55D-BD76C7EB30BB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Producer", "ASPNETCoreRabittMQ\Producer\Producer.csproj", "{ED3ED8C2-1E33-4343-A55D-BD76C7EB30BB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Subsciber", "ASPNETCoreRabittMQ\Subsciber\Subsciber.csproj", "{69C6B9A4-0938-48CB-BC36-2C1B4BEE83D7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Subsciber", "ASPNETCoreRabittMQ\Subsciber\Subsciber.csproj", "{69C6B9A4-0938-48CB-BC36-2C1B4BEE83D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunctionAppRebbitMQTrigger", "FunctionAppRebbitMQTrigger\FunctionAppRebbitMQTrigger.csproj", "{546CEB97-5377-494A-B7FC-C740FC6C3DC1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,6 +25,10 @@ Global
 		{69C6B9A4-0938-48CB-BC36-2C1B4BEE83D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{69C6B9A4-0938-48CB-BC36-2C1B4BEE83D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{69C6B9A4-0938-48CB-BC36-2C1B4BEE83D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{546CEB97-5377-494A-B7FC-C740FC6C3DC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{546CEB97-5377-494A-B7FC-C740FC6C3DC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{546CEB97-5377-494A-B7FC-C740FC6C3DC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{546CEB97-5377-494A-B7FC-C740FC6C3DC1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -30,6 +36,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{ED3ED8C2-1E33-4343-A55D-BD76C7EB30BB} = {66D34D95-D7E0-4805-8683-1AA63E9968B3}
 		{69C6B9A4-0938-48CB-BC36-2C1B4BEE83D7} = {66D34D95-D7E0-4805-8683-1AA63E9968B3}
+		{546CEB97-5377-494A-B7FC-C740FC6C3DC1} = {66D34D95-D7E0-4805-8683-1AA63E9968B3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {ACC0608F-C536-441A-8EF8-B03AEEFD8134}

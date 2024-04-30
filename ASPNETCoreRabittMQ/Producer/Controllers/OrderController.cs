@@ -16,10 +16,10 @@ namespace Producer.Controllers
         [HttpPost("/Order")]
         public async Task<IActionResult> CreateOrder(OrderDto orderDto)
         {
-            for(int i = 0; i < 100; i++)
-            {
+            //for(int i = 0; i < 100; i++)
+            //{
                 await orderService.SaveOrder(orderDto);
-            }
+            //}
             
             return Ok(orderService.GetAllOrder());
         }

@@ -17,7 +17,9 @@ namespace Producer.RabbitMQ
         public void SendMessage<T>(T message)
         {
             using var channel = _connection.Connection.CreateModel();
-            channel.QueueDeclare("order", exclusive: false);
+            //channel.QueueDeclare("order", exclusive: true);
+            channel.QueueDeclarePassive("order");
+            //channel.QueueBind()
             var json = JsonSerializer.Serialize(message);
 
             var body = Encoding.UTF8.GetBytes(json);

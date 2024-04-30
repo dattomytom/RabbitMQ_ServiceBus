@@ -14,7 +14,7 @@ namespace Subsciber
             };
             var connection = factory.CreateConnection();
             using var chanel = connection.CreateModel();
-            chanel.QueueDeclare("Orders", exclusive: false);
+            //chanel.QueueDeclare("Orders", exclusive: false);
             var consumer = new EventingBasicConsumer(chanel);
             consumer.Received += (sender, e) =>
             {
